@@ -19,6 +19,7 @@
 		11A4E5F327CEC8D400DB83FD /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4E5F227CEC8D400DB83FD /* StateController.swift */; };
 		11A4E5F627CED60100DB83FD /* ArtistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4E5F527CED60100DB83FD /* ArtistResponse.swift */; };
 		11A4E5F827CED62500DB83FD /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4E5F727CED62500DB83FD /* Artist.swift */; };
+		11A4E5FA27CF7E5900DB83FD /* ITunesAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4E5F927CF7E5900DB83FD /* ITunesAdaptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		11A4E5C027CD560600DB83FD /* MusicByLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicByLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A4E5C327CD560600DB83FD /* MusicByLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationApp.swift; sourceTree = "<group>"; };
 		11A4E5C527CD560600DB83FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		11A4E5C727CD560900DB83FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11A4E5C727CD560900DB83FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MusicByLocation/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		11A4E5CA27CD560900DB83FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11A4E5D027CD560A00DB83FD /* MusicByLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicByLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A4E5D427CD560A00DB83FD /* MusicByLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationTests.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		11A4E5F227CEC8D400DB83FD /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		11A4E5F527CED60100DB83FD /* ArtistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistResponse.swift; sourceTree = "<group>"; };
 		11A4E5F727CED62500DB83FD /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		11A4E5F927CF7E5900DB83FD /* ITunesAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesAdaptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				11A4E5C927CD560900DB83FD /* Preview Content */,
 				11A4E5ED27CD81CE00DB83FD /* LocationHandler.swift */,
 				11A4E5F227CEC8D400DB83FD /* StateController.swift */,
+				11A4E5F927CF7E5900DB83FD /* ITunesAdaptor.swift */,
 			);
 			path = MusicByLocation;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A4E5EE27CD81CE00DB83FD /* LocationHandler.swift in Sources */,
+				11A4E5FA27CF7E5900DB83FD /* ITunesAdaptor.swift in Sources */,
 				11A4E5C627CD560600DB83FD /* ContentView.swift in Sources */,
 				11A4E5C427CD560600DB83FD /* MusicByLocationApp.swift in Sources */,
 				11A4E5F127CE217100DB83FD /* CLPlacemark.swift in Sources */,

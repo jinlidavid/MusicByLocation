@@ -11,15 +11,21 @@ struct ContentView: View {
     @StateObject private var state = StateController()
     
     var body: some View {
-        VStack {
-            Text(state.artistsByLocation)
-            Spacer()
-            Button("Find Music", action: {
-                state.findMusic()
-            })
-        } .onAppear(perform: {
-            state.requestAccessToLocationData()
-        })
+        NavigationView {
+            VStack {
+                List(state.artistsByLocation, id: \.self) { element in
+                    LazyVStack {
+                        Link("\(element.name)",destination: URL(string: "\(element.url)")!)
+                        Text("Genre: \(element.genre ?? "Error")")
+                    }
+                }
+                Button("Find Music", action: {
+                    state.findMusic()
+                })
+            } .onAppear(perform: {
+                state.requestAccessToLocationData()
+            }).navigationTitle("Music By Location")
+        }
     }
 }
 

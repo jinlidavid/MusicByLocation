@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Artist: Codable {
+struct Artist: Codable, Hashable {
     var name: String
+    var url: String
+    var genre: String?
     
     private enum CodingKeys: String, CodingKey {
         case name = "artistName"
+        case url = "artistLinkUrl"
+        case genre = "primaryGenreName"
     }
 }
